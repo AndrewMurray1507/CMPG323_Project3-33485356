@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "compute.appService1": {
+      "group": "connections",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/33485356P3WEBAPP",
+      "type": "compute.appService.windows"
+    },
+    "mssql1": {
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/33485356sqlserver/databases/33485356sqldb",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:connectstring",
+      "dynamicId": null
+    }
+  }
+}
